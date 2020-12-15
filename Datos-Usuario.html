@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="ComportamientoEdad.js"></script>
         <title> Datos Usuario</title>
     </head>
 
@@ -9,7 +10,7 @@
             <h4>Rellena tu CV</h4> <br>
 
             <label>Nombre:</label> <br>
-            <input type="text" name="NameUser"> <br>
+            <input  name="NameUser"> <br>
             <label>Apellidos:</label> <br>
             <input type="text" name="ApellidosUser" size="50"> <br>
 
@@ -17,6 +18,11 @@
             <input type="password" name="PasswordUser"> <br>
             <label>Confirme Contraseña:</label> <br>
             <input type="password" name="ConirmPasswordUser"> <br>
+
+            <label>Edad: </label> <br>
+            <input type="range" id="rangeEdad" name="edad" value="18" min="0" max="100" onchange="cambioEdad(this.id)"> <br>
+            <input type="number" id="numeroEdad" name="edad" value="18" onchange="cambioEdad(this.id)"> <br>
+            
 
             <label>Identificacion</label> <br>
             <select name="DI">
